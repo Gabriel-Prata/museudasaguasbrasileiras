@@ -1,0 +1,59 @@
+{% load static %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<!--My CSS-->
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+<!--MAP CSS-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha384-VzLXTJGPSyTLX6d96AxgkKvE/LRb7ECGyTxuwtpjHnVWVZs2gp5RDjeM/tgBnVdM" crossorigin=""/>
+
+
+
+<!--Bootstrap 5-->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
+
+
+<link rel="shortcut icon" href="{% static 'media/minilogobianca.png' %}" type="image/x-icon">
+
+<script src="https://kit.fontawesome.com/0bb8a1da7f.js" crossorigin="anonymous"></script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<style>
+    #card1{
+        background-image: url('{%static 'media\home\gallerycarousel\aguasmarginais.jpg'%}');
+    }
+    #card2{
+        background-image: url('{%static 'media\home\gallerycarousel\pantanal.jpg'%}');
+    }
+    #card3{
+        background-image: url('{%static 'media\home\gallerycarousel\tww.jpg'%}');
+    }
+    #card4{
+        background-image: url('{%static 'media\home\gallerycarousel\custos.png'%}');
+    }
+    #card5{
+        background-image: url('{%static 'media\home\gallerycarousel\aguabenta.jpg'%}');
+    }
+    #card6{
+        background-image: url('{%static 'media\home\gallerycarousel\curupira.png'%}');
+    }
+    #card7{
+        background-image: url('{%static 'media\home\gallerycarousel\acervo.jpg'%}');
+    }
+</style>

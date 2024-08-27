@@ -1,0 +1,473 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+{% trans "Inicio" %}
+{% endblock title %}
+
+{% block content %}
+
+<div style="height: 7vh;"></div>
+
+
+
+<div class="carousel-body">
+  <div class="carousel">
+
+    <div class="carousel-slide active">
+      <img src="{% static 'media/home/capa1.jpg' %}" alt="Capa do museu">
+      <div class="carousel-content">
+        <div class="container" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.514) 0%, rgba(0, 0, 0, 0.441) 50%, rgba(0, 0, 0, 0) 100%);box-shadow: 0 0 0; ">
+          <h2 class="carousel-title">
+            Museu das<br>Águas<br>Brasileiras
+          </h2>
+          <div style="text-align: center;">
+            <a href={% url 'webpage:about' %}>
+              <button class="carousel-button">{% trans "Sobre o Museu" %}</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-slide">
+      <img src="{% static 'media/home/capa2.jpg' %}" alt="A Água que Queremos">
+      <div class="carousel-content">
+        <div class="container" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.514) 0%, rgba(0, 0, 0, 0.441) 50%, rgba(0, 0, 0, 0) 100%);box-shadow: 0 0 0; ">
+          <h2 class="carousel-title">
+            {% trans "--A Água--" %}<br>{% trans "--Que--" %}<br>{% trans "--Queremos--" %}"
+          </h2>
+          <div style="text-align: center;">
+            <a href={% url 'webpage:home' %}>
+              <button class="carousel-button">{% trans "Saiba Mais" %}</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-slide">
+      <img src="{% static 'media/home/capa3.jpg' %}" alt="Mãos que Cuidam">
+      <div class="carousel-content">
+        <div class="container" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.514) 0%, rgba(0, 0, 0, 0.441) 50%, rgba(0, 0, 0, 0) 100%);box-shadow: 0 0 0; ">
+          <h2 class="carousel-title">
+            {% trans "Mãos Que" %}<br>{% trans "Cuidam da" %}<br>{% trans "Água" %}
+          </h2>
+          <div style="text-align: center;">
+            <a href={% url 'webpage:home' %}>
+              <button class="carousel-button">{% trans "Saiba Mais" %}</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-arrow left" onclick="prevSlide()">&#10094;</button>
+    <button class="carousel-arrow right" onclick="nextSlide()">&#10095;</button>
+    <div class="carousel-dots">
+      <div class="carousel-dot active" onclick="currentSlide(0)"></div>
+      <div class="carousel-dot" onclick="currentSlide(1)"></div>
+      <div class="carousel-dot" onclick="currentSlide(2)"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="home-background">
+
+
+
+  <div style="height:3vh">
+  </div>
+
+
+
+  <div class="news-title2">
+    {% trans "Exposições" %}
+  </div>
+
+  <div class="see-more">
+    <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: aliceblue;">
+      {% trans "Todas as exposições" %} <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+
+  <div style="height:3vh">
+  </div>
+
+
+
+  <div class="pcarousel-container">
+    <button class="pcarousel-button left" id="prevButton" onclick="prevCard()"><i class="fa-solid fa-arrow-left"></i></button>
+
+    <div class="pcarousel-card middle" id="card1">
+      <div class="a0-card-content">
+        <div class="a0-tag">{% trans "Fotografias" %}</div>
+        <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: white;">
+          <h2>Águas Marginais</h2>
+        </a>
+        <p>
+          {% trans "Por" %} Emanoel Saravá
+        </p>
+      </div>
+    </div>
+
+
+    <div class="pcarousel-card right" id="card2">
+      <div class="a0-card-content">
+        <div class="a0-tag">{% trans "Fotografias" %}</div>
+        <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: white;">
+          <h2>Pantanal Brasileiro</h2>
+        </a>
+        <p>
+            {% trans "Por" %} Mario Friedlander
+        </p>
+      </div>
+    </div>
+
+
+    <div class="pcarousel-card right hidden" id="card3">
+      <div class="a0-card-content">
+        <div class="a0-tag">{% trans "Fotografias" %}</div>
+        <div class="a0-tag" style="background-color: crimson;">{% trans "Evento" %}</div>
+        <div class="a0-tag" style="background-color: rgb(20, 220, 37);">{% trans "Vídeo" %}</div>
+        <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: white;">
+          <h2>{% trans "A Água Que Queremos" %} 2024</h2>
+        </a>
+        <p>
+          {% trans "Concurso" %} "The Water We Want"
+        </p>
+      </div>
+    </div>
+
+
+    <div class="pcarousel-card right hidden" id="card4">
+      <div class="a0-card-content">
+        <div class="a0-tag" style="background-color: rgb(20, 220, 37);">{% trans "Vídeo" %}</div>
+        <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: white;">
+          <h2>Custos</h2>
+        </a>
+        <p>
+          {% trans "Um filme de" %} Marilene Ribeiro
+        </p>
+      </div>
+    </div>
+
+
+    <div class="pcarousel-card right hidden" id="card5">
+      <div class="a0-card-content">
+        <div class="a0-tag" style="background-color: rgb(220, 200, 20);">{% trans "Áudio" %}</div>
+        <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: white;">
+          <h2>Água Benta</h2>
+        </a>
+        <p>
+          {% trans "Álbum de" %} Bené Fonteneles
+        </p>
+      </div>
+    </div>
+
+
+    <div class="pcarousel-card right hidden" id="card6">
+      <div class="a0-card-content">
+        <div class="a0-tag" style="background-color: rgb(20, 220, 37);">{% trans "Vídeo" %}</div>
+        <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: white;"><h2>O Curupira</h2></a>
+        <p>{% trans "Um filme de" %} Carolina Fernandes</p>
+      </div>
+    </div>
+
+
+    <div class="pcarousel-card right hidden" id="card7">
+      <div class="a0-card-content">
+        <div class="a0-tag">{% trans "Fotografias" %}</div>
+        <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: white;">
+          <h2>{% trans "Acervo" %}</h2>
+        </a>
+        <p>
+          {% trans "Conteúdos do Museu fora das exposições" %}
+        </p>
+      </div>
+    </div>
+
+    <button class="pcarousel-button right" id="nextButton" onclick="nextCard()"><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+  
+
+
+  <div class="news-title2">
+    {% trans "Atividades" %}
+  </div>
+  <div class="see-more">
+    <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: aliceblue;">
+      {% trans "Veja todas as nossas atividades" %} <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+
+
+  <div class="container" style="background: transparent; box-shadow: none;">
+    <div class="row row-maosquecuidam">
+
+      <div class="col-md-6">
+        <div style="padding: 20px;">
+          <h3 class="atividade-title">
+            {% trans "Mãos que" %}<br>{% trans "Cuidam" %}
+          </h3>
+          <h4 style="color: aliceblue;">{% trans "Empoderando a Juventude para o Futuro Sustentável" %}</h4>
+          <p style="text-align: justify; color: aliceblue; padding: 5px;">
+            <i class="fa-solid fa-quote-left"></i> {% trans "Em um mundo onde a escassez de água e a degradação ambiental são desafios cada vez mais urgentes" %}, {% trans "a organização" %} "{% trans "Mãos que Cuidam da Água" %}" {% trans "surge como uma voz inspiradora e catalisadora de mudança. Nosso compromisso, dentre outros é empoderar a juventude e desenvolver líderes para promover a conscientização e o cuidado com a água, essencial para a promoção da sustentabilidade" %}. <i class="fa-solid fa-quote-right"></i>
+          </p>
+          <p style="text-align: center;">
+            <a href="{% url 'webpage:home' %}"><button class="carousel-button">{% trans "Saiba Mais" %}</button></a>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div style="display: flex; align-items: center; height: 100%;">
+          <img class="img-fluid" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);" src="{%static 'media\home\maosquecuidam.png'%}" alt="Mãos que Cuidam">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container" style="background: transparent; box-shadow: none;">
+    <div class="row row-aaguaquequeremos">
+
+      <div class="col-md-6">
+        <div style="display: flex; align-items: center; height: 100%;">
+          <img class="img-fluid" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);" src="{%static 'media\home\twww.jpg'%}" alt="Mãos que Cuidam">
+        </div>
+      </div>
+
+      <div class="col-md-6" >
+        <div style="padding: 20px;">
+          <h3 class="atividade-title">
+            {% trans "A Água que" %}<br>{% trans "Queremos" %}
+          </h3>
+          <h4 style="color: aliceblue;">{% trans "Os jovens como narradores do nosso património hídrico cultural e natural" %}</h4>
+          <p style="text-align: justify; color: aliceblue; padding: 5px;">
+            <i class="fa-solid fa-quote-left"></i> {% trans "O Concurso  A Água que Queremos" %} (TWWW - The Water We Want) {% trans "é uma iniciativa da Rede de Museus da Água (watermuseums.net), com a participação do Museu das Águas Brasileiras e tem como objetivo explorar os nossos multifacetados legados da água - naturais e culturais, tangíveis e intangíveis - na perspectiva dos jovens para construir um futuro mais sustentável" %}.
+            <i class="fa-solid fa-quote-right"></i>
+          </p>
+          <p style="text-align: center;">
+            <a href={% url 'webpage:home' %}><button class="carousel-button">{% trans "Saiba Mais" %}</button></a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div style="height:5vh"></div>
+
+      
+  <div class="news-title2">
+    {% trans "Notícias" %}
+  </div>
+  <div class="see-more">
+    <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: aliceblue;">
+      {% trans "Veja todas as notícias" %} <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+
+  <div class="news-section">
+    <div class="cardn">
+      <img src="{% static 'media/aaqq/capa.png' %}" alt="Card Image">
+      <div class="cardn-content">
+        <h3 class="cardn-title">
+          {% trans "Participação Concurso internacional A Água que Queremos" %}
+        </h3>
+        <p class="cardn-description">
+          {% trans "Conheça os trabalhos selecionados em exposição digital da Rede Global de Museus da Água" %} ...
+        </p>
+      </div>
+      <div class="cardn-footer">
+        <a href="{% url 'webpage:home' %}">
+          {% trans "Ler Notícia" %}
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="height:5vh"></div>
+
+  <div class="news-title2-museu">
+    {% trans "O" %} Museu Das Águas Brasileiras
+  </div>
+
+
+
+  <div class="container" style="background: transparent; box-shadow: none; width: 80%; margin: 0 auto">
+    <div class="row">
+
+
+      <div class="col-md-6" style="padding: 15px;">
+        <h3 style="color: aliceblue; text-align: center; padding-bottom: 20px;">
+          {% trans "Ambiente digital interativo. Focado no aprendizado e na conservação da água." %}
+        </h3>
+        <p style="text-align: justify; color: aliceblue;">
+          {% trans "Com a missão de apoiar a educação sobre a água e mudar percepções, atitudes e comportamentos equivocados em relação a essa temática com o desenvolvimento de programas educativos que enfatizem a necessidade urgente de estabelecer uma nova relação entre os grupos sociais e o resto da sociedade mediada por complexos fluxos de água." %}
+        </p>
+        <p style="text-align: center;">
+          <a href={% url 'webpage:home' %}><button class="carousel-button">{% trans "Sobre o Museu das Águas Brasileiras" %}</button></a>
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <div style="display: flex; align-items: center; height: 100%; flex-direction: column;">
+          <img class="img-fluid" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);" src="{%static 'media\home\fotosobre.png'%}" alt="Sobre o Museu">
+          <span style="color: aliceblue;">Fishing on a festive day Aruanã. Photo by: Heber Gracio.</span>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+    
+
+
+  <div style="height: 3vh;"></div>
+
+
+
+  <div class="news-title2-museu">
+    {% trans "Parceiros" %}
+  </div>
+  <div class="see-more">
+    <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: aliceblue;">
+        {% trans "Saiba Mais" %} {% trans "sobre nossos parceiros" %} <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+
+  <div style="height: 3vh;"></div>
+
+  <div style="text-align: center; max-width: 60%; margin: 0 auto; border-radius: 50px; background-color: aliceblue; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);">
+    <img class="img-fluid" src="{% static 'media\home\parceiros\parceirosmais.png' %}" alt="">
+  </div>
+
+
+
+  <div style="height: 3vh;"></div>
+
+
+
+</div>
+<!-- SCRIPTS -->
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+    let currentSlideIndex = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+    
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+        dots[i].classList.toggle('active', i === index);
+        });
+    }
+    
+    function nextSlide() {
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+        showSlide(currentSlideIndex);
+    }
+    
+    function prevSlide() {
+        currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+        showSlide(currentSlideIndex);
+    }
+    
+    function currentSlide(index) {
+        currentSlideIndex = index;
+        showSlide(currentSlideIndex);
+    }
+    
+    // Passar automaticamente os slides a cada 12 segundos
+    setInterval(nextSlide, 20000);
+
+
+    let currentIndex = 1;
+    const totalCards = 7;
+    const transitionDuration = 180; // Duration should match the CSS transition time
+
+    function updateButtons() {
+        document.getElementById('prevButton').disabled = currentIndex === 1;
+        document.getElementById('nextButton').disabled = currentIndex === totalCards;
+    }
+
+    function nextCard() {
+        if (currentIndex < totalCards) {
+            const current = document.getElementById(`card${currentIndex}`);
+            const next = document.getElementById(`card${currentIndex + 1}`);
+            const hiddenNext = currentIndex + 2 <= totalCards ? document.getElementById(`card${currentIndex + 2}`) : null;
+            const previous = currentIndex > 1 ? document.getElementById(`card${currentIndex - 1}`) : null;
+
+            current.classList.remove('middle');
+            current.classList.add('left');
+
+            next.classList.remove('right');
+            next.classList.add('middle');
+
+            if (previous) {
+                previous.classList.remove('left');
+                previous.classList.add('hidden');
+            }
+
+            setTimeout(() => {
+                if (hiddenNext) {
+                    hiddenNext.classList.remove('hidden');
+                    hiddenNext.classList.add('right');
+                    hiddenNext.classList.add('fade-in');
+                    setTimeout(() => {
+                        hiddenNext.classList.remove('fade-in');
+                    }, transitionDuration);
+                }
+            }, transitionDuration);
+
+            currentIndex++;
+            updateButtons();
+        }
+    }
+
+    function prevCard() {
+        if (currentIndex > 1) {
+            const current = document.getElementById(`card${currentIndex}`);
+            const prev = document.getElementById(`card${currentIndex - 1}`);
+            const hiddenPrev = currentIndex - 2 >= 1 ? document.getElementById(`card${currentIndex - 2}`) : null;
+            const next = currentIndex < totalCards ? document.getElementById(`card${currentIndex + 1}`) : null;
+
+            current.classList.remove('middle');
+            current.classList.add('right');
+
+            prev.classList.remove('left');
+            prev.classList.add('middle');
+
+            if (hiddenPrev) {
+                hiddenPrev.classList.remove('hidden');
+                hiddenPrev.classList.add('left');
+            }
+
+            if (next) {
+                next.classList.remove('right');
+                next.classList.add('hidden');
+            }
+
+            currentIndex--;
+            updateButtons();
+        }
+    }
+
+    updateButtons();
+</script>
+
+
+{% trans "A Água que Queremos" %}<br>
+{% endblock content %}

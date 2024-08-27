@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  {% include "partials/head.html" %}
+  <title>
+    {% block title %}{% endblock title %} | Museu das Águas Brasileiras
+  </title>
+</head>
+<body class="body">
+
+    {% include "partials/header.html" %}
+    {% block content %}{% endblock content %}
+    {% include "partials/footer.html" %}
+
+</body>
+</html>

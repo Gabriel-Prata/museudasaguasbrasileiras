@@ -1,0 +1,169 @@
+# Traduções do site do Museu das Águas Brasileiras para 'en'.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Gabriel Prata <gabriel.prata@mail.uft.edu.br>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-26 20:00-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Gabriel Prata <gabriel.prata@mail.uft.edu.br>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\museudasaguasbrasileiras\settings.py:18
+msgid "English"
+msgstr ""
+
+#: .\museudasaguasbrasileiras\settings.py:19
+msgid "Portuguese"
+msgstr ""
+
+#: .\museudasaguasbrasileiras\settings.py:20
+msgid "Spanish"
+msgstr ""
+
+msgid "Sobre o Museu"
+msgstr "About the Museum"
+
+msgid "--A Água--"
+msgstr "The Water"
+
+msgid "--Que--"
+msgstr "WE"
+
+msgid "--Queremos--"
+msgstr "Want"
+
+msgid "Saiba Mais"
+msgstr "Learn More"
+
+msgid "Inicio"
+msgstr "Home"
+
+msgid "Mãos que"
+msgstr "Hands That"
+
+msgid "Mãos Que"
+msgstr "Hands That"
+
+msgid "Cuidam da"
+msgstr "Take Care of"
+
+msgid "Água"
+msgstr "Water"
+
+msgid "Exposições"
+msgstr "Exhibitions"
+
+msgid "Todas as exposições"
+msgstr "All Exhibitions"
+
+msgid "Fotografias"
+msgstr "Photographs"
+
+msgid "Por"
+msgstr "By"
+
+msgid "Evento"
+msgstr "Event"
+
+msgid "Vídeo"
+msgstr "Video"
+
+msgid "A Água Que Queremos"
+msgstr "The Water We Want"
+
+msgid "Concurso"
+msgstr "Contest"
+
+msgid "Um filme de"
+msgstr "A film by"
+
+msgid "Álbum de"
+msgstr "Album by"
+
+msgid "Acervo"
+msgstr "Collection"
+
+msgid "Conteúdos do Museu fora das exposições"
+msgstr "Museum contents outside the exhibitions"
+
+msgid "Atividades"
+msgstr "Activities"
+
+msgid "Veja todas as nossas atividades"
+msgstr "See all our activities"
+
+msgid "Cuidam"
+msgstr "Care"
+
+msgid "Empoderando a Juventude para o Futuro Sustentável"
+msgstr "Empowering Youth for a Sustainable Future"
+
+msgid "Em um mundo onde a escassez de água e a degradação ambiental são desafios cada vez mais urgentes"
+msgstr "In a world where water scarcity and environmental degradation are increasingly urgent challenges"
+
+msgid "a organização"
+msgstr "the organization"
+
+msgid "Mãos que Cuidam da Água"
+msgstr "Hands that Care for Water"
+
+msgid "surge como uma voz inspiradora e catalisadora de mudança. Nosso compromisso, dentre outros é empoderar a juventude e desenvolver líderes para promover a conscientização e o cuidado com a água, essencial para a promoção da sustentabilidade"
+msgstr "emerges as an inspiring voice and catalyst for change. Our commitment, among others, is to empower youth and develop leaders to promote awareness and care for water, essential for promoting sustainability"
+
+msgid "A Água que"
+msgstr "The Water that"
+
+msgid "Queremos"
+msgstr "We Want"
+
+msgid "Os jovens como narradores do nosso património hídrico cultural e natural"
+msgstr "Young people as narrators of our cultural and natural water heritage"
+
+msgid "O Concurso  A Água que Queremos"
+msgstr "The Water We Want Contest"
+
+msgid "é uma iniciativa da Rede de Museus da Água (watermuseums.net), com a participação do Museu das Águas Brasileiras e tem como objetivo explorar os nossos multifacetados legados da água - naturais e culturais, tangíveis e intangíveis - na perspectiva dos jovens para construir um futuro mais sustentável"
+msgstr "is an initiative of the Water Museums Network (watermuseums.net), with the participation of the Museu das Águas Brasileiras and aims to explore our multifaceted water legacies - natural and cultural, tangible and intangible - from the perspective of young people to build a more sustainable future"
+
+msgid "Notícias"
+msgstr "News"
+
+msgid "Veja todas as notícias"
+msgstr "See all news"
+
+msgid "Participação Concurso internacional A Água que Queremos"
+msgstr "Participation in the international competition The Water We Want"
+
+msgid "Conheça os trabalhos selecionados em exposição digital da Rede Global de Museus da Água"
+msgstr "Discover the works selected in the digital exhibition of the Global Network of Water Museums"
+
+msgid "Ler Notícia"
+msgstr "Read News"
+
+msgid "O"
+msgstr "The"
+
+msgid "Ambiente digital interativo. Focado no aprendizado e na conservação da água."
+msgstr "Interactive digital environment. Focused on learning and water conservation."
+
+msgid "Com a missão de apoiar a educação sobre a água e mudar percepções, atitudes e comportamentos equivocados em relação a essa temática com o desenvolvimento de programas educativos que enfatizem a necessidade urgente de estabelecer uma nova relação entre os grupos sociais e o resto da sociedade mediada por complexos fluxos de água."
+msgstr "With the mission of supporting education about water and changing mistaken perceptions, attitudes and behaviors regarding this topic by developing educational programs that emphasize the urgent need to establish a new relationship between social groups and the rest of society mediated by complex water flows."
+
+msgid "Sobre o"
+msgstr "About"
+
+msgid "sobre nossos parceiros"
+msgstr "about our partners"
+
+msgid "Parceiros"
+msgstr "Partners"
+

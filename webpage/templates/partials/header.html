@@ -1,0 +1,51 @@
+{% load static %}
+{% load i18n %}
+<header class="header">
+  <div class="header-space">
+  </div>
+  
+  <div class="logo">
+    <a href="{% url 'webpage:home' %}">
+      <img src="{% static "media/logobiancasemfundo.png" %}" alt="Site Logo">
+    </a>
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <ul class="menu">
+    <li><a href="{% url 'webpage:home' %}">{% trans "Inicio"%}</a></li>
+    <li><a href="{% url 'webpage:home' %}">{% trans "Galerias"%}</a></li>
+    <li><a href="{% url 'webpage:home' %}">Network</a></li>
+    <li><a href="{% url 'webpage:home' %}">{% trans "Atividades"%}</a></li>
+    <li><a href="{% url 'webpage:home' %}">{% trans "Notícias"%}</a></li>
+    <li><a href="{% url 'webpage:home' %}">{% trans "Parceiros"%}</a></li>
+    <li><a href="{% url 'webpage:about' %}">{% trans "Contato"%}</a></li>
+  </ul>
+
+    <div class="icons">
+        <div class="language-dropdown">
+            <form action="{% url 'set_language' %}" method="post">
+            {% csrf_token %}
+                <select name="language" onchange="this.form.submit()">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    <option value="en" {% if LANGUAGE_CODE == 'en' %}selected{% endif %}>English</option>
+                    <option value="pt-br" {% if LANGUAGE_CODE == 'pt-br' %}selected{% endif %}>Português</option>
+                    <option value="es" {% if LANGUAGE_CODE == 'es' %}selected{% endif %}>Español</option>
+                </select>
+            </form>
+        </div>
+        <a target="_blank" href="https://www.instagram.com/museudasaguasbrasileiras/">
+            <img class="img-fluid" src="{% static "media/instagram.png" %}">
+        </a>
+        <a href="https://www.gabrielrnprata.com.br/admin/">
+            <img class="img-fluid" src="{% static "media/user.png" %}">
+        </a>
+    </div>
+
+  <div class="header-space">
+  </div>
+</header>
