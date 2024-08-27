@@ -2,21 +2,176 @@
 {% load static %}
 {% load i18n %}
 {% block title %}
-About
+{% trans "Sobre" %}
 {% endblock title %}
-
 {% block content %}
-.<br>
-.<br>
-.<br>
-.<br>
-.<br>
-.<br>
-.<br>
+{% include "partials/pagemap.html" %}
 
-{% trans "Essa é a página sobre" %}<br>
-{% trans "Introdução" %}<br>
-{% trans "Localização Estratégica" %}<br>
-{% trans "Missão Ética" %}<br>
+<div class="home-background">
 
+  <div class="general-title--2">
+    Sobre o Museu das Águas Brasileiras
+  </div>
+  <p class="subtitle">
+    Projeto institucional interdisciplinar da Universidade Federal do Tocantins (UFT)
+  </p>
+
+  <div class="container-box--2">
+    
+    <div class="photo-layout-bg">
+      <div class="photo-layout">
+        <div class="photo large-photo" style="position: relative;" >
+          <span class="subtittle-photos" style="position: absolute; bottom:0%; left:0%; z-index: 9"> <i>River Bath. By Marco Jacob.</i> </span>
+          <img src="{% static 'media/photos/banhorio.jpg' %}" alt="Large Photo">
+        </div>
+        <div class="photo-group">
+          <div class="photo small-photo" style="position: relative;">
+            <span class="full-screen subtittle-photos" style="position: absolute; bottom:0%; left:0%; z-index: 9"> <i>The flight of the scarlet macaw. By CarolPrange.</i> </span>
+            <img src="{% static 'media/photos/arara2.jpg' %}" alt="Small Photo 1">
+          </div>
+          <div class="photo small-photo" style="position: relative;">
+            <span class="full-screen subtittle-photos" style="position: absolute; bottom:0%; left:0%; z-index: 9"> <i>Chuveirinho. By Carol Prange.</i> </span>
+            <img src="{% static 'media/photos/chuveirinho.jpg' %}" alt="Small Photo 2">
+          </div>
+        </div>
+      </div>
+    </div>
+  <div style="width: 90%; margin: 0 auto;">
+    <div style="height:15px;"></div>
+      <section>
+        <h2>Introdução</h2>
+        <p>
+          <mark>O Museu das Águas Brasileiras</mark> é um projeto institucional interdisciplinar da Universidade Federal do Tocantins (UFT) que tem como objetivo aproximar o público dos temas relacionados à água enquanto elemento essencial para a vida não somente em termos biológicos, mas também culturais e sociais – como herança dos nossos ancestrais e patrimônio que será deixado aos nossos descendentes. Em outras palavras, é uma iniciativa que visa divulgar informações socioecológicas e as melhores práticas de gestão da água para públicos científicos e não científicos.
+        </p>
+      </section>
+
+      <section>
+        <h2>Localização Estratégica</h2>
+        <p>
+          A localização do Museu no Estado do Tocantins é estratégica por se tratar de uma região contida por dois grandes afluentes do rio Amazonas (rios Tocantins e Araguaia), com ecossistemas e reservas hídricas (inclusive subterrâneas) <strong>pródigas</strong>, mas <em>ameaçadas</em>, principalmente pelo avanço do agronegócio e da mineração, e uma população urbana em expansão. Nesse contexto, o Museu pretende lidar com os legados do desenvolvimento e os desafios hidroecológicos emergentes, concentrando-se na realidade vivida pela grande população urbana e rural de baixa renda, incluindo afrodescendentes e povos indígenas.
+        </p>
+      </section>
+      <section>
+        <h2>Missão Ética</h2>
+        <p>
+          A principal missão ética do Museu é apoiar a educação sobre a água e mudar <strong>percepções, atitudes e comportamentos equivocados</strong> em relação a essa temática com o desenvolvimento de programas educativos que enfatizem a necessidade urgente de estabelecer uma nova relação entre os grupos sociais e o resto da sociedade mediada por complexos fluxos de água.
+        </p>
+        <div class="divimg" style="position: relative"><img class="img-fluid" src="{% static 'media/photos/fotosobre.jpg' %}" alt="Histórico">
+          <span class="subtittle-photos" style="position: absolute; bottom: 0%; left: 0%">
+            <i>Acquiring fluency in the language of water Valcir Sumekwa Xerente. Photo By: Heber Gracio.</i>
+          </span>
+        </div>
+      </section>
+      <section>
+        <h2>Histórico</h2>
+        <p>
+          Criado em maio de <strong>2023</strong> como um <mark>espaço virtual</mark>, este é o primeiro museu brasileiro a integrar a Rede Internacional de Museus da Água (WAMU-NET) da Organização das Nações Unidas para a Educação, a Ciência e a Cultura (Unesco).
+        </p>
+      </section>
+      <section>
+        <h2>Contexto e Sustentabilidade</h2>
+        <p>
+          O Museu foi lançado num contexto onde a <strong>sustentabilidade da água</strong> é um conceito em evolução que, nas últimas décadas, tem incorporado gradualmente um manancial de conhecimentos teóricos e práticos. Em particular, o significado da <em>gestão sustentável da água</em> passou de um foco estreito na eficiência dos recursos para uma consideração mais ampla das exigências institucionais e da interação entre diferentes grupos sociais.
+        </p>
+      </section>
+      <section>
+        <h2>Objetivos</h2>
+        <p>
+          Em consonância com os objetivos da <a href="https://www.watermuseums.net/">WAMU-NET</a>, o museu pretende inspirar ações de proteção e de gestão sustentável, bem como fortalecer o processo educativo e de formação em relação à água por meio de atividades inerentes à Instituição UFT, como o ensino, a pesquisa e a extensão. Esse processo será fomentado pela implementação de atividades para promoção e disseminação da cultura, do conhecimento e de práticas que contribuam para a melhor gestão desse recurso <em>limitado</em> no planeta.
+        </p>
+      </section>
+
+      <section>
+        <h2>Compromisso com a Agenda 2030</h2>
+        <p>
+          O Museu da Água da UFT também está comprometido em apoiar a implementação da <a href="https://www.watermuseums.net/assets/Uploads/footer-links/RESOLUTION-XXIII-5-Global-Network-Water-Museums-EN-final.pdf">Resolução nº XXIII-5</a> endossada em junho de 2018 pela Comissão Intergovernamental do Conselho da Unesco-IHP (Programa Hidrológico Internacional) e da Resolução nº 7-XXIV, que são intrínsecas ao cumprimento da <strong>Agenda 2030</strong> (Objetivos de Desenvolvimento Sustentável) da Organização das Nações Unidas (ONU).
+        </p>
+      </section>
+
+      <section>
+        <h2>Desafios e Perspectivas</h2>
+        <p>
+          O conflito entre interesses na gestão da água é particularmente desafiador para as áreas em desenvolvimento dos trópicos e na Amazônia. Como parte deste debate mais amplo sobre como operacionalizar a sustentabilidade da água, o Museu das Águas Brasileiras irá <strong>catalogar</strong> e <mark>divulgar elementos-chave do sistema hídrico</mark> que podem oferecer insights úteis sobre os dilemas e desafios da sustentabilidade dos produtos. Este é um passo crucial para reconectar as pessoas com as dimensões do património material e imaterial relacionadas com a água, incluindo as dimensões sociais, regulamentares, económicas, culturais, ecológicas, artísticas e espirituais.
+        </p>
+      </section>
+
+      <section>
+        <h2>Principais Objetivos</h2>
+        <p>
+          O Museu tem como objetivo inspirar a elevação do valor educativo e a produção do conhecimento gerado, diretamente, proporcionando à população, na forma de expansão e desenvolvimento do capital humano, e transmitindo noções de <em>cidadania</em> e <strong>pertencimento</strong> baseadas em valores locais, associados à gestão da água, gerando impactos de longo prazo nas comunidades e ações de conservação e proteção da água.
+        </p>
+      </section>
+
+      <div class="table-content">
+        <h2>Atividades</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>EIXO</th>
+                <th>OBJETIVOS</th>
+                <th>AÇÕES</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1. Valor Educativo da Água e Produção de Conhecimento (Educação e Formação)</td>
+                <td>Contribuir para a formação social, educativa e cultural, incluindo áreas remotas e situações austeras.</td>
+                <td>
+                  <ul>
+                    <li>Acompanhamento;</li>
+                    <li>Apoio escolar;</li>
+                    <li>Programas comunitários;</li>
+                    <li>Orientação de estágio;</li>
+                    <li>Cursos, seminários, simpósios, fóruns e conferências.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>2. Valor Simbólico</td>
+                <td>Promover a percepção dos processos culturais também como geradores de riqueza social.</td>
+                <td>
+                  <ul>
+                    <li>Exposições;</li>
+                    <li>Construção de acervos materiais;</li>
+                    <li>Promoção de concursos que expressem a cultura local, regional e nacional.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>3. Promoção da Divulgação do Acervo</td>
+                <td>Estabelecimento da circulação de coleções entre Museus, como possibilidade de dinamização das atividades.</td>
+                <td>
+                  <ul>
+                    <li>Parcerias firmadas entre museus e intercâmbio de acervos.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <section>
+          <h2 style="text-align: center; padding-top: 15px; border-top: 1px solid #cce0ff">
+            Por que um museu da água?
+          </h2>
+          <div class="divimg" style="padding-bottom: 15px">
+            <img class="img-fluid" src="{% static 'media/photos/pequi.jpg' %}" alt="Histórico">
+          </div>
+          <p>
+            Os desafios da crescente escassez de água, esgotamento de recursos, poluição, desertificação, derretimento de geleiras e padrões interrompidos de inundações e secas como resultado da mudança climática, juntamente com declínios sem precedentes na diversidade biológica e cultural e o dramático deslocamento de populações humanas, não podem ser resolvido apenas através de abordagens tecnocráticas.
+          </p>
+          <p>
+            Nas últimas décadas, essas abordagens unidimensionais conceberam e usaram a água principalmente como um meio de apoiar o desenvolvimento econômico 'a todo custo'. No entanto, as pesadas consequências de tal modelo de desenvolvimento são testemunhadas pela dramática poluição de todos os aquíferos e ecossistemas de água doce em todo o mundo. O valor da água não pode ser reduzido apenas ao seu preço, ou 'custo'.
+          </p>
+          <p>
+            Em contextos altamente antropizados, testemunhamos como o ciclo hidrológico natural tem se tornado cada vez mais 'invisível' e simultaneamente distante da consciência das pessoas. Esta condição tornou os múltiplos patrimônios e valores relacionados à água mais vulneráveis ​​do que nunca.
+          </p>
+          <p>
+            Hoje há uma necessidade urgente de promover perspectivas inovadoras, transdisciplinares e holísticas para superar abordagens técnicas indevidamente estreitas que provaram ser uma resposta inadequada aos desafios da crise global da água. Neste contexto, os museus desempenham um papel fundamental para abrir caminho para a mudança de paradigma e construir uma 'nova cultura da água'. Juntos, os museus podem promover conexões mais fortes com os mais diversos 'mundos aquáticos' que as sociedades de consumo tendem a esquecer e obliterar. WAMU-NET visa consolidar a cooperação com essas instituições em todo o mundo.
+          </p>
+        </section>
+      </div>
+    </div>
+    <div style="height:15px"></div>
+  </div>
+</div>
 {% endblock content %}  

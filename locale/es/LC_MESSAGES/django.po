@@ -173,7 +173,7 @@ msgid "Galerias"
 msgstr "Gallery"
 
 msgid "Contato"
-msgstr "Contat"
+msgstr "Contato"
 
 msgid "Áudio"
 msgstr "Audio"
@@ -184,3 +184,5 @@ msgstr "Reservados todos los derechos"
 msgid "Entre em contato conosco"
 msgstr "Contáctenos"
 
+msgid "Sobre"
+msgstr "Acerca"

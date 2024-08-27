@@ -1,0 +1,98 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+Exposições
+{% endblock title %}
+{% block content %}
+
+<div class="home-background">
+  <div class="general-title--2">
+    Nossas Exposições
+  </div>
+
+
+
+  <div class="">
+
+    <div class="gallery-page-content">
+      <div class="home-gallery-container">
+        <div class="home-gallery-card-container">
+          <a href="{% url 'webpage:home' %}">
+            <div class="home-gallery-card">
+                <img src="{%static 'media\galerias\capas\twww.jpg'%}" alt="A Água que Queremos">
+                <div class="home-gallery-card-content">
+                  <h3>A Água que Queremos 2024</h3>
+                  <p>Concurso "The Water We Want" 2024</p>
+                </div>
+            </div>
+          </a>
+          
+          <a href="{% url 'webpage:home' %}">
+            <div class="home-gallery-card">
+                <img src="{%static 'media\galerias\capas\aguabenta.jpg'%}" alt="Água Benta">
+                <div class="home-gallery-card-content">
+                    <h3>Água Benta</h3>
+                    <p>“Água Benta”, álbum de Bené Fonteneles</p>
+                </div>
+            </div>
+          </a>
+
+          <a href="{% url 'webpage:home' %}">
+            <div class="home-gallery-card">
+              <img src="{%static 'media\galerias\capas\aguasmarginais.jpg'%}" alt="Águas Marginais">
+              <div class="home-gallery-card-content">
+                <h3>Águas Marginais</h3>
+                <p>Pantanal Brasileiro, por Emanoel Saravá</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="{% url 'webpage:home' %}">
+            <div class="home-gallery-card">
+              <img src="{%static 'media\galerias\capas\custos.jpg'%}" alt="Custos">
+              <div class="home-gallery-card-content">
+                <h3>Custos</h3>
+                <p>“Custos”, um filme de Marilene Ribeiro</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="{% url 'webpage:home' %}">
+            <div class="home-gallery-card">
+              <img src="{%static 'media\galerias\capas\curupira.jpg'%}" alt="O Curupira">
+              <div class="home-gallery-card-content">
+                <h3>O Curupira</h3>
+                <p>“O Curupira”, um filme de Carolina Fernandes</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="{% url 'webpage:home' %}">
+            <div class="home-gallery-card">
+              <img src="{%static 'media\galerias\capas\pantanal.jpg'%}" alt="Pantanal Brasileiro">
+              <div class="home-gallery-card-content">
+                <h3>Pantanal Brasileiro</h3>
+                <p>Pantanal Brasileiro, por Mario Friedlander</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="{% url 'webpage:home' %}">
+            <div class="home-gallery-card">
+              <img src="{%static 'media\galerias\capas\acervo.jpg'%}" alt="Pantanal Brasileiro">
+              <div class="home-gallery-card-content">
+                <h3>Acervo</h3>
+                <p>Conteúdo do Museu que não estão em exposições</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+{% endblock content %} 

@@ -182,3 +182,5 @@ msgstr "All Rights Reserved"
 msgid "Entre em contato conosco"
 msgstr "Contact us"
 
+msgid "Sobre"
+msgstr "About"

@@ -1,0 +1,36 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+Notícias
+{% endblock title %}
+{% block content %}
+
+<div class="home-background" style="min-height:80vh">
+<div class="general-title--2">
+  Notícias
+</div>
+
+
+
+
+  <div class="news-section">
+
+    <div class="cardn">
+      <img src="{%static 'media/aaqq/capa.png'%}" alt="Card Image">
+      <div class="cardn-content">
+        <h3 class="cardn-title">
+          Participação Concurso internacional A Água que Queremoa</h3>
+        <p class="cardn-description">
+          Conheça os trabalhos selecionados em exposição digital da Rede Global de Museus da Água ...
+        </p>
+      </div>
+      <div class="cardn-footer">
+        <a href="{% url 'webpage:home' %}">Ler Notícia</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock content %} 

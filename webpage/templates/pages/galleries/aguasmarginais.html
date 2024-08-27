@@ -1,0 +1,132 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+Águas Marginais
+{% endblock title %}
+{% block content %}
+
+<div class="general-title--1" style="border-bottom: 0px">
+  Águas Marginais
+</div>
+<div style="border-bottom: 1px solid #cce0ff">
+  <p style="text-align:center;font-family: roboto;font-weight: 400;font-style: italic; ">
+    Por Emanoel Saravá
+  </p>
+</div>
+
+
+
+<div class="gallery" style="width: 80%; margin: 0 auto; padding-top: 40px">
+  {% for image in images %}
+  <div class="gallery-item" onclick="openImage({{ forloop.counter0 }})">
+      <img src="{{ image.image.url }}" alt="{{ image.title }}">
+  </div>
+  {% endfor %}
+</div>
+
+<div id="full-screen-view" class="full-screen-view">
+  <span class="close" onclick="closeImage()">&times;</span>
+  <span class="prev" onclick="prevImage()">&#10094;</span>
+  <span class="next" onclick="nextImage()">&#10095;</span>
+  <img id="full-image" class="full-image">
+  <div id="image-caption" class="caption"></div>
+</div>
+<div class="container-box">
+  <div class="gallery-info">
+    <div class="gallery-subtittle">
+      "Todo corpo é água, toda água é memória, toda memória é sagrada"
+    </div>
+    <div style="text-align:justify; color:#333333;">
+      <p>
+        <strong>Águas Marginais</strong> é uma série fotográfica que se banha nas águas históricas e culturais das antigas fontes de água de Salvador, na Bahia, transitando pela identidade e memória coletiva da cidade.
+      </p>
+
+      <p>
+        As fontes de água, como a <i>Fonte da Pedreira</i>, <i>Fonte Gamboa de Baixo</i>, <i>Fonte da Bica</i> e a <i>Fonte do Chega Nego</i>, retratadas entre 2022 a 2024, são testemunhas silenciosas da história de Salvador, desde os tempos coloniais até os dias atuais.
+      </p>
+          
+      <p>
+        Durante o período colonial, essas fontes foram o principal meio de abastecimento hídrico para as primeiras engrenagens da cidade, sendo levadas principalmente por força escrava.
+      </p>
+          
+      <p>
+        Hoje, degradadas pelo tempo e por falta do olhar do poder público e ainda por políticas socioculturais defasadas, as fontes são lugares marginalizados, sendo utilizadas pela população vulnerável da cidade, refletindo as <mark>desigualdades sociais</mark> e a <mark>luta ancestral por direitos básicos</mark>.
+      </p>
+
+      <p>
+        O território das águas torna-se um <strong>território político, de resistência e reencontros</strong>, onde a água não é apenas um recurso físico, mas também um símbolo de identidade e resistência cultural.
+      </p>
+
+      <p>
+        Através de fotoperformances, a série busca registrar a natureza do uso das águas de cada fonte, destacando sua importância histórica e cultural, bem como os desafios enfrentados por esses espaços. Colaborando com artistas locais e de outros estados, as performances exploram os movimentos desses corpos d’água em diálogo com as fontes.
+      </p>
+          
+      <p><strong>Ficha Técnica:</strong></p>
+      <p><strong>Pesquisa e fotografia:</strong> Emanoel Saravá</p>
+      <p><strong>Performances:</strong></p>
+      <ul>
+          <li>Ricardo Boa Sorte - Fonte da Gamboa de Baixo</li>
+          <li>Quilomba Zu - Fonte do Chega Nego</li>
+          <li>Joseh Jará - Fonte da Bica</li>
+      </ul>
+      <p>
+        <strong>Apoio:</strong> Proext, UFBA.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script src="{% static 'js/scripts.js' %}"></script>
+
+<script>
+
+  var images = [
+    {% for image in images %}
+      {url: "{{ image.image.url }}", title: "{{ image.title }}"},
+    {% endfor %}
+  ];
+  var currentIndex = 0;
+
+  function openImage(index) {
+    currentIndex = index;
+    document.getElementById('full-screen-view').style.display = 'flex';
+    updateImage();
+    document.addEventListener('keydown', handleKeyDown);
+  }
+
+  function closeImage() {
+    document.getElementById('full-screen-view').style.display = 'none';
+    document.getElementById('full-image').src = '';
+    document.getElementById('image-caption').innerText = '';
+    document.removeEventListener('keydown', handleKeyDown);
+  }
+
+  function updateImage() {
+    document.getElementById('full-image').src = images[currentIndex].url;
+    document.getElementById('image-caption').innerText = images[currentIndex].title;
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateImage();
+  }
+
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateImage();
+  }
+
+  function handleKeyDown(event) {
+    if (event.key === 'Escape') {
+        closeImage();
+    } else if (event.key === 'ArrowRight') {
+        nextImage();
+    } else if (event.key === 'ArrowLeft') {
+        prevImage();
+    }
+  }
+
+</script>
+
+{% endblock content %} 

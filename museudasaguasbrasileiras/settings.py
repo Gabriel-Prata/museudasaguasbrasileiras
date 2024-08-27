@@ -14,20 +14,8 @@ from pathlib import Path
 from django.utils.translation import gettext_lazy as _
 
 
-def load_env_file(filepath):
-    with open(filepath) as f:
-        for line in f:
-            if line.startswith('#') or '=' not in line:
-                continue
-            # Remove espaços em branco ao redor da chave e do valor
-            key, value = map(str.strip, line.split('=', 1))
-            # Coloca as variáveis no ambiente do sistema
-            os.environ[key] = value
-
-load_env_file(os.path.join(os.path.dirname(__file__), '../.env'))
-
-DEBUG = os.getenv('DEBUG') == 'True'
-SECRET_KEY = os.getenv('SECRET_KEY', 'default_secret_key')
+DEBUG = True
+SECRET_KEY = 'django-insecure-rul&f5x!k*4hm))i0o#ssr*!=t^=c($ugbfa6dpa*27a6*2e-m'
 
 # Idiomas
 LANGUAGES = [
@@ -55,7 +43,7 @@ LOCALE_PATHS = (
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -148,6 +136,9 @@ USE_TZ = True
 
 STATIC_ROOT = BASE_DIR / "static" 
 STATIC_URL = 'static/'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

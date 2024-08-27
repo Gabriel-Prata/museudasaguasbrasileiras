@@ -7,10 +7,6 @@
 
 {% block content %}
 
-<div style="height: 7vh;"></div>
-
-
-
 <div class="carousel-body">
   <div class="carousel">
 
@@ -295,40 +291,40 @@
   </div>
 
   <div style="height:5vh"></div>
-
-  <div class="news-title2-museu">
-    {% trans "O" %} Museu Das Águas Brasileiras
-  </div>
-
-
-
-  <div class="container" style="background: transparent; box-shadow: none; width: 80%; margin: 0 auto">
-    <div class="row">
+  <div class="gradientwbg">
+    <div class="news-title2-museu">
+      {% trans "O" %} Museu Das Águas Brasileiras
+    </div>
 
 
-      <div class="col-md-6" style="padding: 15px;">
-        <h3 style="color: aliceblue; text-align: center; padding-bottom: 20px;">
-          {% trans "Ambiente digital interativo. Focado no aprendizado e na conservação da água." %}
-        </h3>
-        <p style="text-align: justify; color: aliceblue;">
-          {% trans "Com a missão de apoiar a educação sobre a água e mudar percepções, atitudes e comportamentos equivocados em relação a essa temática com o desenvolvimento de programas educativos que enfatizem a necessidade urgente de estabelecer uma nova relação entre os grupos sociais e o resto da sociedade mediada por complexos fluxos de água." %}
-        </p>
-        <p style="text-align: center;">
-          <a href={% url 'webpage:home' %}><button class="carousel-button">{% trans "Sobre o Museu das Águas Brasileiras" %}</button></a>
-        </p>
-      </div>
 
-      <div class="col-md-6">
-        <div style="display: flex; align-items: center; height: 100%; flex-direction: column;">
-          <img class="img-fluid" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);" src="{%static 'media\home\fotosobre.png'%}" alt="Sobre o Museu">
-          <span style="color: aliceblue;">Fishing on a festive day Aruanã. Photo by: Heber Gracio.</span>
+    <div class="container" style="background: transparent; box-shadow: none; width: 100%; margin: 0 auto">
+      <div class="row">
+
+
+        <div class="col-md-6" style="padding: 15px;">
+          <h3 style="color: aliceblue; text-align: center; padding-bottom: 20px;">
+            {% trans "Ambiente digital interativo. Focado no aprendizado e na conservação da água." %}
+          </h3>
+          <p style="text-align: justify; color: aliceblue;">
+            {% trans "Com a missão de apoiar a educação sobre a água e mudar percepções, atitudes e comportamentos equivocados em relação a essa temática com o desenvolvimento de programas educativos que enfatizem a necessidade urgente de estabelecer uma nova relação entre os grupos sociais e o resto da sociedade mediada por complexos fluxos de água." %}
+          </p>
+          <p style="text-align: center;">
+            <a href={% url 'webpage:home' %}><button class="carousel-button">{% trans "Sobre o Museu das Águas Brasileiras" %}</button></a>
+          </p>
         </div>
+
+        <div class="col-md-6">
+          <div style="display: flex; align-items: center; height: 100%; flex-direction: column; position:relative">
+            <img class="img-fluid" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);" src="{%static 'media\home\fotosobre.png'%}" alt="Sobre o Museu">
+            <span class="subtittle-photos" style="position: absolute; bottom:0%; left:0%; z-index: 9; border-bottom-left-radius:15px; border-bottom-right-radius:15px; text-align:center"> <i>Fishing on a festive day Aruanã. Photo by: Heber Gracio.</i> </span>
+          </div>
+        </div>
+
+
       </div>
-
-
     </div>
   </div>
-    
 
 
   <div style="height: 3vh;"></div>

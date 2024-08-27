@@ -1,0 +1,46 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+Atividades
+{% endblock title %}
+{% block content %}
+
+<div class="home-background" style="min-height:80vh">
+
+  <div class="general-title--2">
+      Nossas Atividades
+  </div>
+  <div class="section-container">
+    <div class="card">
+      <img src="https://docs.uft.edu.br/share/proxy/alfresco-noauth/api/internal/shared/node/_N66lCYcSum1RzdFCKopUA/content/thumbnails/imgpreview" alt="A água que queremos">
+      <div class="date-badge">
+        <p>13</p>
+        <p>Mai</p>
+        <p>2024</p>
+      </div>
+      <div class="card-content">
+        <h3>A Água que Queremos</h3>
+        <a href="{% url 'webpage:home' %}">
+          <button class="saiba-mais-button">Saiba mais</button>
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://docs.uft.edu.br/share/proxy/alfresco-noauth/api/internal/shared/node/tC69xdVmQkaYhtwmSLQ6gg/content/M%C3%A3os%20que%20Cuidam%20-%20banner.jpg/thumbnails/imgpreview" alt="Mãos que cuidam da água">
+      <div class="date-badge">
+        <p>13</p>
+        <p>Mai</p>
+        <p>2024</p>
+      </div>
+      <div class="card-content">
+        <h3>Mãos que Cuidam da Água</h3>
+        <a href="{% url 'webpage:home' %}">
+          <button class="saiba-mais-button">Saiba mais</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %} 

@@ -17,13 +17,27 @@
   </div>
 
   <ul class="menu">
-    <li><a href="{% url 'webpage:home' %}">{% trans "Inicio"%}</a></li>
-    <li><a href="{% url 'webpage:home' %}">{% trans "Galerias"%}</a></li>
-    <li><a href="{% url 'webpage:home' %}">Network</a></li>
-    <li><a href="{% url 'webpage:home' %}">{% trans "Atividades"%}</a></li>
-    <li><a href="{% url 'webpage:home' %}">{% trans "Notícias"%}</a></li>
-    <li><a href="{% url 'webpage:home' %}">{% trans "Parceiros"%}</a></li>
-    <li><a href="{% url 'webpage:about' %}">{% trans "Contato"%}</a></li>
+    <li>
+      <a style="{% if current_page == 'home' %}font-weight: bolder;font-size:large; color:#4a65ff{% endif %}" href="{% url 'webpage:home' %}">{% trans "Inicio"%}</a>
+    </li>
+    <li>
+      <a style="{% if current_page == 'galleries' %}font-weight: bolder;font-size:large; color:#4a65ff{% endif %}" href="{% url 'webpage:galleries' %}">{% trans "Galerias"%}</a>
+    </li>
+    <li>
+      <a style="{% if current_page == 'network' %}font-weight: bolder;font-size:large; color:#4a65ff{% endif %}" href="{% url 'webpage:network' %}">Network</a>
+    </li>
+    <li>
+      <a style="{% if current_page == 'activities' %}font-weight: bolder;font-size:large; color:#4a65ff{% endif %}" href="{% url 'webpage:activities' %}">{% trans "Atividades"%}</a>
+    </li>
+    <li>
+      <a style="{% if current_page == 'news' %}font-weight: bolder;font-size:large; color:#4a65ff{% endif %}" href="{% url 'webpage:news' %}">{% trans "Notícias"%}</a>
+    </li>
+    <li>
+      <a style="{% if current_page == 'partners' %}font-weight: bolder;font-size:large; color:#4a65ff{% endif %}" href="{% url 'webpage:partners' %}">{% trans "Parceiros"%}</a>
+    </li>
+    <li>
+      <a style="{% if current_page == 'contact' %}font-weight: bolder;font-size:large; color:#4a65ff{% endif %}" href="{% url 'webpage:contact' %}">{% trans "Contato"%}</a>
+    </li>
   </ul>
 
     <div class="icons">
@@ -34,7 +48,7 @@
           <img id="flag" src="{% static 'media/country_flags/' %}{{ LANGUAGE_CODE }}.svg" alt="Flag" class="img-fluid">
           <select name="language" id="language-select" onchange="this.form.submit()">
             <option value="en" {% if LANGUAGE_CODE == 'en' %}selected{% endif %}>English</option>
-            <option value="pt-br" {% if LANGUAGE_CODE == 'pt-br' %}selected{% endif %}>Português Brasil</option>
+            <option value="pt-br" {% if LANGUAGE_CODE == 'pt-br' %}selected{% endif %}>Português</option>
             <option value="es" {% if LANGUAGE_CODE == 'es' %}selected{% endif %}>Español</option>
           </select>
         </form>

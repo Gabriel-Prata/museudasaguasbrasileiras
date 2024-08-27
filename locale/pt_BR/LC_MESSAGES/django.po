@@ -179,3 +179,5 @@ msgstr "Todos os direitos reservados"
 msgid "Entre em contato conosco"
 msgstr "Entre em contato conosco"
 
+msgid "Sobre"
+msgstr "Sobre"
