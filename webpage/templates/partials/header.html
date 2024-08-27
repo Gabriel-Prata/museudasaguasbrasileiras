@@ -27,25 +27,28 @@
   </ul>
 
     <div class="icons">
-        <div class="language-dropdown">
-            <form action="{% url 'set_language' %}" method="post">
-            {% csrf_token %}
-                <select name="language" onchange="this.form.submit()">
-                    {% get_current_language as LANGUAGE_CODE %}
-                    <option value="en" {% if LANGUAGE_CODE == 'en' %}selected{% endif %}>English</option>
-                    <option value="pt-br" {% if LANGUAGE_CODE == 'pt-br' %}selected{% endif %}>Português</option>
-                    <option value="es" {% if LANGUAGE_CODE == 'es' %}selected{% endif %}>Español</option>
-                </select>
-            </form>
-        </div>
-        <a target="_blank" href="https://www.instagram.com/museudasaguasbrasileiras/">
-            <img class="img-fluid" src="{% static "media/instagram.png" %}">
-        </a>
-        <a href="https://www.gabrielrnprata.com.br/admin/">
-            <img class="img-fluid" src="{% static "media/user.png" %}">
-        </a>
+      <div class="language-dropdown">
+        <form id="language-form" action="{% url 'set_language' %}" method="post">
+          {% csrf_token %}
+          {% get_current_language as LANGUAGE_CODE %}
+          <img id="flag" src="{% static 'media/country_flags/' %}{{ LANGUAGE_CODE }}.svg" alt="Flag" class="img-fluid">
+          <select name="language" id="language-select" onchange="this.form.submit()">
+            <option value="en" {% if LANGUAGE_CODE == 'en' %}selected{% endif %}>English</option>
+            <option value="pt-br" {% if LANGUAGE_CODE == 'pt-br' %}selected{% endif %}>Português Brasil</option>
+            <option value="es" {% if LANGUAGE_CODE == 'es' %}selected{% endif %}>Español</option>
+          </select>
+        </form>
+
+      </div>
+      <a target="_blank" href="https://www.instagram.com/museudasaguasbrasileiras/">
+          <img class="img-fluid" src="{% static "media/instagram.png" %}">
+      </a>
+      <a href="https://www.gabrielrnprata.com.br/admin/">
+          <img class="img-fluid" src="{% static "media/user.png" %}">
+      </a>
     </div>
 
   <div class="header-space">
   </div>
 </header>
+

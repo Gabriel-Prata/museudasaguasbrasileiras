@@ -168,3 +168,19 @@ msgstr "acerca de nuestros socios"
 
 msgid "Parceiros"
 msgstr "Socios"
+
+msgid "Galerias"
+msgstr "Gallery"
+
+msgid "Contato"
+msgstr "Contat"
+
+msgid "Áudio"
+msgstr "Audio"
+
+msgid "Todos os direitos reservados"
+msgstr "Reservados todos los derechos"
+
+msgid "Entre em contato conosco"
+msgstr "Contáctenos"
+

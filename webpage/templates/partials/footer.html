@@ -1,0 +1,16 @@
+{% load static %}
+{% load i18n %}
+</div>
+<footer class="footer">
+  <div class="wave">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+      <path class="wave-fill" d="M0,30 C50,60 150,0 250,30 C350,60 450,0 500,30 L500,100 L0,100 Z"></path>
+    </svg>
+  </div>
+  <div class="footer-content">
+    <p>&copy; 2024 Museu das Águas Brasileiras. {% trans "Todos os direitos reservados" %}.</p>
+    <p>{% trans "Entre em contato conosco" %}: museudaagua@uft.edu.br</p>
+  </div>
+</footer>
+
+<script src="{% static 'js/scripts.js' %}"></script>

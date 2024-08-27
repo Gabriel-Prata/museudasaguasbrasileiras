@@ -36,7 +36,7 @@ msgid "--A Água--"
 msgstr "The Water"
 
 msgid "--Que--"
-msgstr "WE"
+msgstr "We"
 
 msgid "--Queremos--"
 msgstr "Want"
@@ -166,4 +166,19 @@ msgstr "about our partners"
 
 msgid "Parceiros"
 msgstr "Partners"
+
+msgid "Galerias"
+msgstr "Gallery"
+
+msgid "Contato"
+msgstr "Contat"
+
+msgid "Áudio"
+msgstr "Audio"
+
+msgid "Todos os direitos reservados"
+msgstr "All Rights Reserved"
+
+msgid "Entre em contato conosco"
+msgstr "Contact us"
 
