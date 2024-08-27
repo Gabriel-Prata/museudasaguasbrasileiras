@@ -14,7 +14,7 @@ from pathlib import Path
 from django.utils.translation import gettext_lazy as _
 
 
-DEBUG = True
+DEBUG = False
 SECRET_KEY = 'django-insecure-rul&f5x!k*4hm))i0o#ssr*!=t^=c($ugbfa6dpa*27a6*2e-m'
 
 # Idiomas
@@ -43,7 +43,7 @@ LOCALE_PATHS = (
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['palmas.uft.edu.br', 'museudasaguasbrasileiras']
 
 
 # Application definition

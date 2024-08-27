@@ -34,7 +34,7 @@
             {% trans "--A Água--" %}<br>{% trans "--Que--" %}<br>{% trans "--Queremos--" %}"
           </h2>
           <div style="text-align: center;">
-            <a href={% url 'webpage:home' %}>
+            <a href={% url 'webpage:activitieAAguaQueQueremos2024' %}>
               <button class="carousel-button">{% trans "Saiba Mais" %}</button>
             </a>
           </div>
@@ -50,7 +50,7 @@
             {% trans "Mãos Que" %}<br>{% trans "Cuidam da" %}<br>{% trans "Água" %}
           </h2>
           <div style="text-align: center;">
-            <a href={% url 'webpage:home' %}>
+            <a href={% url 'webpage:activitieMaosQueCuidam' %}>
               <button class="carousel-button">{% trans "Saiba Mais" %}</button>
             </a>
           </div>
@@ -85,7 +85,7 @@
   </div>
 
   <div class="see-more">
-    <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: aliceblue;">
+    <a href="{% url 'webpage:galleries' %}" style="text-decoration: none; color: aliceblue;">
       {% trans "Todas as exposições" %} <i class="fa-solid fa-arrow-right"></i>
     </a>
   </div>
@@ -101,7 +101,7 @@
     <div class="pcarousel-card middle" id="card1">
       <div class="a0-card-content">
         <div class="a0-tag">{% trans "Fotografias" %}</div>
-        <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: white;">
+        <a href="{% url 'webpage:galleryAguasMarginais' %}" style="text-decoration: none; color: white;">
           <h2>Águas Marginais</h2>
         </a>
         <p>
@@ -114,7 +114,7 @@
     <div class="pcarousel-card right" id="card2">
       <div class="a0-card-content">
         <div class="a0-tag">{% trans "Fotografias" %}</div>
-        <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: white;">
+        <a href="{% url 'webpage:galleryPantanalBrasileiro' %}" style="text-decoration: none; color: white;">
           <h2>Pantanal Brasileiro</h2>
         </a>
         <p>
@@ -129,7 +129,7 @@
         <div class="a0-tag">{% trans "Fotografias" %}</div>
         <div class="a0-tag" style="background-color: crimson;">{% trans "Evento" %}</div>
         <div class="a0-tag" style="background-color: rgb(20, 220, 37);">{% trans "Vídeo" %}</div>
-        <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: white;">
+        <a href="{% url 'webpage:galleryAAguaQueQueremos' %}" style="text-decoration: none; color: white;">
           <h2>{% trans "A Água Que Queremos" %} 2024</h2>
         </a>
         <p>
@@ -142,7 +142,7 @@
     <div class="pcarousel-card right hidden" id="card4">
       <div class="a0-card-content">
         <div class="a0-tag" style="background-color: rgb(20, 220, 37);">{% trans "Vídeo" %}</div>
-        <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: white;">
+        <a href="{% url 'webpage:galleryCustos' %}" style="text-decoration: none; color: white;">
           <h2>Custos</h2>
         </a>
         <p>
@@ -154,30 +154,17 @@
 
     <div class="pcarousel-card right hidden" id="card5">
       <div class="a0-card-content">
-        <div class="a0-tag" style="background-color: rgb(220, 200, 20);">{% trans "Áudio" %}</div>
-        <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: white;">
-          <h2>Água Benta</h2>
-        </a>
-        <p>
-          {% trans "Álbum de" %} Bené Fonteneles
-        </p>
+        <div class="a0-tag" style="background-color: rgb(20, 220, 37);">{% trans "Vídeo" %}</div>
+        <a href="{% url 'webpage:galleryOCurupira' %}" style="text-decoration: none; color: white;"><h2>O Curupira</h2></a>
+        <p>{% trans "Um filme de" %} Carolina Fernandes</p>
       </div>
     </div>
 
 
     <div class="pcarousel-card right hidden" id="card6">
       <div class="a0-card-content">
-        <div class="a0-tag" style="background-color: rgb(20, 220, 37);">{% trans "Vídeo" %}</div>
-        <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: white;"><h2>O Curupira</h2></a>
-        <p>{% trans "Um filme de" %} Carolina Fernandes</p>
-      </div>
-    </div>
-
-
-    <div class="pcarousel-card right hidden" id="card7">
-      <div class="a0-card-content">
         <div class="a0-tag">{% trans "Fotografias" %}</div>
-        <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: white;">
+        <a href="{% url 'webpage:galleryAcervo' %}" style="text-decoration: none; color: white;">
           <h2>{% trans "Acervo" %}</h2>
         </a>
         <p>
@@ -195,7 +182,7 @@
     {% trans "Atividades" %}
   </div>
   <div class="see-more">
-    <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: aliceblue;">
+    <a href="{% url 'webpage:activities' %}" style="text-decoration: none; color: aliceblue;">
       {% trans "Veja todas as nossas atividades" %} <i class="fa-solid fa-arrow-right"></i>
     </a>
   </div>
@@ -214,7 +201,7 @@
             <i class="fa-solid fa-quote-left"></i> {% trans "Em um mundo onde a escassez de água e a degradação ambiental são desafios cada vez mais urgentes" %}, {% trans "a organização" %} "{% trans "Mãos que Cuidam da Água" %}" {% trans "surge como uma voz inspiradora e catalisadora de mudança. Nosso compromisso, dentre outros é empoderar a juventude e desenvolver líderes para promover a conscientização e o cuidado com a água, essencial para a promoção da sustentabilidade" %}. <i class="fa-solid fa-quote-right"></i>
           </p>
           <p style="text-align: center;">
-            <a href="{% url 'webpage:home' %}"><button class="carousel-button">{% trans "Saiba Mais" %}</button></a>
+            <a href="{% url 'webpage:activitieMaosQueCuidam' %}"><button class="carousel-button">{% trans "Saiba Mais" %}</button></a>
           </p>
         </div>
       </div>
@@ -248,7 +235,7 @@
             <i class="fa-solid fa-quote-right"></i>
           </p>
           <p style="text-align: center;">
-            <a href={% url 'webpage:home' %}><button class="carousel-button">{% trans "Saiba Mais" %}</button></a>
+            <a href={% url 'webpage:activitieAAguaQueQueremos2024' %}><button class="carousel-button">{% trans "Saiba Mais" %}</button></a>
           </p>
         </div>
       </div>
@@ -265,7 +252,7 @@
     {% trans "Notícias" %}
   </div>
   <div class="see-more">
-    <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: aliceblue;">
+    <a href="{% url 'webpage:news' %}" style="text-decoration: none; color: aliceblue;">
       {% trans "Veja todas as notícias" %} <i class="fa-solid fa-arrow-right"></i>
     </a>
   </div>
@@ -282,7 +269,7 @@
         </p>
       </div>
       <div class="cardn-footer">
-        <a href="{% url 'webpage:home' %}">
+        <a href="{% url 'webpage:news01' %}">
           {% trans "Ler Notícia" %}
         </a>
       </div>
@@ -310,7 +297,7 @@
             {% trans "Com a missão de apoiar a educação sobre a água e mudar percepções, atitudes e comportamentos equivocados em relação a essa temática com o desenvolvimento de programas educativos que enfatizem a necessidade urgente de estabelecer uma nova relação entre os grupos sociais e o resto da sociedade mediada por complexos fluxos de água." %}
           </p>
           <p style="text-align: center;">
-            <a href={% url 'webpage:home' %}><button class="carousel-button">{% trans "Sobre o Museu das Águas Brasileiras" %}</button></a>
+            <a href={% url 'webpage:home' %}><button class="carousel-button">{% trans "Sobre o" %} Museu das Águas Brasileiras</button></a>
           </p>
         </div>
 
@@ -335,7 +322,7 @@
     {% trans "Parceiros" %}
   </div>
   <div class="see-more">
-    <a href="{% url 'webpage:home' %}" style="text-decoration: none; color: aliceblue;">
+    <a href="{% url 'webpage:partners' %}" style="text-decoration: none; color: aliceblue;">
         {% trans "Saiba Mais" %} {% trans "sobre nossos parceiros" %} <i class="fa-solid fa-arrow-right"></i>
     </a>
   </div>
@@ -391,7 +378,7 @@
 
 
     let currentIndex = 1;
-    const totalCards = 7;
+    const totalCards = 6;
     const transitionDuration = 180; // Duration should match the CSS transition time
 
     function updateButtons() {

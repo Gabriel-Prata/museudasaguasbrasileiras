@@ -186,3 +186,7 @@ msgstr "Contáctenos"
 
 msgid "Sobre"
 msgstr "Acerca"
+
+msgid "Nossas Exposições"
+msgstr "Nuestras Exposiciones"
+

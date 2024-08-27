@@ -181,3 +181,6 @@ msgstr "Entre em contato conosco"
 
 msgid "Sobre"
 msgstr "Sobre"
+
+msgid "Nossas Exposições"
+msgstr "Nossas Exposições"

@@ -8,17 +8,13 @@ Exposições
 
 <div class="home-background">
   <div class="general-title--2">
-    Nossas Exposições
+    {% trans "Nossas Exposições" %}
   </div>
-
-
-
   <div class="">
-
     <div class="gallery-page-content">
       <div class="home-gallery-container">
         <div class="home-gallery-card-container">
-          <a href="{% url 'webpage:home' %}">
+          <a href="{% url 'webpage:galleryAAguaQueQueremos' %}">
             <div class="home-gallery-card">
                 <img src="{%static 'media\galerias\capas\twww.jpg'%}" alt="A Água que Queremos">
                 <div class="home-gallery-card-content">
@@ -27,28 +23,16 @@ Exposições
                 </div>
             </div>
           </a>
-          
-          <a href="{% url 'webpage:home' %}">
-            <div class="home-gallery-card">
-                <img src="{%static 'media\galerias\capas\aguabenta.jpg'%}" alt="Água Benta">
-                <div class="home-gallery-card-content">
-                    <h3>Água Benta</h3>
-                    <p>“Água Benta”, álbum de Bené Fonteneles</p>
-                </div>
-            </div>
-          </a>
-
-          <a href="{% url 'webpage:home' %}">
+          <a href="{% url 'webpage:galleryAguasMarginais' %}">
             <div class="home-gallery-card">
               <img src="{%static 'media\galerias\capas\aguasmarginais.jpg'%}" alt="Águas Marginais">
               <div class="home-gallery-card-content">
                 <h3>Águas Marginais</h3>
-                <p>Pantanal Brasileiro, por Emanoel Saravá</p>
+                <p>Águas Marginais, por Emanoel Saravá</p>
               </div>
             </div>
           </a>
-
-          <a href="{% url 'webpage:home' %}">
+          <a href="{% url 'webpage:galleryCustos' %}">
             <div class="home-gallery-card">
               <img src="{%static 'media\galerias\capas\custos.jpg'%}" alt="Custos">
               <div class="home-gallery-card-content">
@@ -57,8 +41,7 @@ Exposições
               </div>
             </div>
           </a>
-
-          <a href="{% url 'webpage:home' %}">
+          <a href="{% url 'webpage:galleryOCurupira' %}">
             <div class="home-gallery-card">
               <img src="{%static 'media\galerias\capas\curupira.jpg'%}" alt="O Curupira">
               <div class="home-gallery-card-content">
@@ -67,8 +50,7 @@ Exposições
               </div>
             </div>
           </a>
-
-          <a href="{% url 'webpage:home' %}">
+          <a href="{% url 'webpage:galleryPantanalBrasileiro' %}">
             <div class="home-gallery-card">
               <img src="{%static 'media\galerias\capas\pantanal.jpg'%}" alt="Pantanal Brasileiro">
               <div class="home-gallery-card-content">
@@ -77,21 +59,18 @@ Exposições
               </div>
             </div>
           </a>
-
-          <a href="{% url 'webpage:home' %}">
+          <a href="{% url 'webpage:galleryAcervo' %}">
             <div class="home-gallery-card">
               <img src="{%static 'media\galerias\capas\acervo.jpg'%}" alt="Pantanal Brasileiro">
               <div class="home-gallery-card-content">
-                <h3>Acervo</h3>
+                <h3>{% trans "Acervo" %}</h3>
                 <p>Conteúdo do Museu que não estão em exposições</p>
               </div>
             </div>
           </a>
-
         </div>
       </div>
     </div>
-    
   </div>
 </div>
 

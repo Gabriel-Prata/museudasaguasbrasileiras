@@ -99,7 +99,7 @@ msgid "Atividades"
 msgstr "Activities"
 
 msgid "Veja todas as nossas atividades"
-msgstr "See all our activities"
+msgstr "See all activities"
 
 msgid "Cuidam"
 msgstr "Care"
@@ -168,10 +168,10 @@ msgid "Parceiros"
 msgstr "Partners"
 
 msgid "Galerias"
-msgstr "Gallery"
+msgstr "Galleries"
 
 msgid "Contato"
-msgstr "Contat"
+msgstr "Contact"
 
 msgid "Áudio"
 msgstr "Audio"
@@ -184,3 +184,7 @@ msgstr "Contact us"
 
 msgid "Sobre"
 msgstr "About"
+
+msgid "Nossas Exposições"
+msgstr "Our Exhibitions"
+

@@ -59,10 +59,56 @@ def activities(request):
   }
   return render(request, 'pages/activities.html', context)
 
+#News:
+
+def news01(request):
+   context = {
+      'current_page': 'news'
+   }
+   return render(request, 'pages/news/01aaguaquequeremos.html', context)
+
+
+#Activities:
+
+def activitieAAguaQueQueremos2024(request):
+   context = {
+      'current_page': 'activities'
+   }
+   return render(request, 'pages/activities/aaguaquequeremos2024.html', context)
+
+
+def activitieMaosQueCuidam(request):
+   context = {
+      'current_page': 'activities'
+   }
+   return render(request, 'pages/activities/maosquecuidam.html', context)
 
 
 
 #Galleries:
+
+def galleryAAguaQueQueremos(request):
+   context = {
+      'current_page': 'galleries'
+   }
+   return render(request, 'pages/galleries/aaguaquequeremos.html', context)
+
+
+def galleryOCurupira(request):
+  context = {
+    'current_page': 'galleries'
+  }
+  return render(request, 'pages/galleries/ocurupira.html', context)  
+
+
+
+def galleryCustos(request):
+  context = {
+    'current_page': 'galleries'
+  }
+  return render(request, 'pages/galleries/custos.html', context)  
+
+
 
 def galleryAguasMarginais(request):
   images = GalleryAguasMarginais.objects.all()
@@ -70,5 +116,22 @@ def galleryAguasMarginais(request):
      'images': images,
      'current_page': 'galleries'
   }
-  return render('pages/galleries/aguasmarginais.html', context)
+  return render(request, 'pages/galleries/aguasmarginais.html', context)
 
+
+def galleryPantanalBrasileiro(request):
+  images = GalleryPantanalBrasileiro.objects.all()
+  context = {
+     'images': images,
+     'current_page': 'galleries'
+  }
+  return render(request, 'pages/galleries/pantanalbrasileiro.html', context)
+
+
+def galleryAcervo(request):
+  images = GalleryAcervo.objects.all()
+  context = {
+     'images': images,
+     'current_page': 'galleries'
+  }
+  return render(request, 'pages/galleries/acervo.html', context)

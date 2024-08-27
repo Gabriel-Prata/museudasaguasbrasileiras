@@ -2,13 +2,13 @@
 {% load static %}
 {% load i18n %}
 {% block title %}
-Notícias
+{% trans "Notícias" %}
 {% endblock title %}
 {% block content %}
 
 <div class="home-background" style="min-height:80vh">
 <div class="general-title--2">
-  Notícias
+  {% trans "Notícias" %}
 </div>
 
 
@@ -20,13 +20,13 @@ Notícias
       <img src="{%static 'media/aaqq/capa.png'%}" alt="Card Image">
       <div class="cardn-content">
         <h3 class="cardn-title">
-          Participação Concurso internacional A Água que Queremoa</h3>
+          {% trans "Participação Concurso internacional A Água que Queremos" %}</h3>
         <p class="cardn-description">
-          Conheça os trabalhos selecionados em exposição digital da Rede Global de Museus da Água ...
+          {% trans "Conheça os trabalhos selecionados em exposição digital da Rede Global de Museus da Água" %} ...
         </p>
       </div>
       <div class="cardn-footer">
-        <a href="{% url 'webpage:home' %}">Ler Notícia</a>
+        <a href="{% url 'webpage:news01' %}">{% trans "Ler Notícia" %}</a>
       </div>
     </div>
 

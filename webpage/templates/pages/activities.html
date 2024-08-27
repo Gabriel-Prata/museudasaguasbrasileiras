@@ -2,14 +2,14 @@
 {% load static %}
 {% load i18n %}
 {% block title %}
-Atividades
+{% trans "Atividades" %}
 {% endblock title %}
 {% block content %}
 
 <div class="home-background" style="min-height:80vh">
 
   <div class="general-title--2">
-      Nossas Atividades
+      {% trans "Atividades" %}
   </div>
   <div class="section-container">
     <div class="card">
@@ -20,9 +20,9 @@ Atividades
         <p>2024</p>
       </div>
       <div class="card-content">
-        <h3>A Água que Queremos</h3>
-        <a href="{% url 'webpage:home' %}">
-          <button class="saiba-mais-button">Saiba mais</button>
+        <h3>{% trans "A Água Que Queremos" %}</h3>
+        <a href="{% url 'webpage:activitieAAguaQueQueremos2024' %}">
+          <button class="saiba-mais-button">{% trans "Saiba Mais" %}</button>
         </a>
       </div>
     </div>
@@ -34,9 +34,9 @@ Atividades
         <p>2024</p>
       </div>
       <div class="card-content">
-        <h3>Mãos que Cuidam da Água</h3>
-        <a href="{% url 'webpage:home' %}">
-          <button class="saiba-mais-button">Saiba mais</button>
+        <h3>{% trans "Mãos que Cuidam da Água" %}</h3>
+        <a href="{% url 'webpage:activitieMaosQueCuidam' %}">
+          <button class="saiba-mais-button">{% trans "Saiba Mais" %}</button>
         </a>
       </div>
     </div>

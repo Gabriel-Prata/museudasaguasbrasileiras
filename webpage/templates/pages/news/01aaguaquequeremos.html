@@ -1,0 +1,75 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+Ação "A Água que Queremos"
+{% endblock title %}
+{% block content %}
+
+<div class="news-body">
+
+  <div class="container">
+    <div style="width:90%; margin: 0 auto">
+
+      <div class="article-header">
+        <h2>
+          Ação "A Água que Queremos" reúne a participação de estudantes de diversas escolas do TO, SP e MG
+        </h2>
+        <p>
+          Published on August 10, 2024
+        </p>
+      </div>
+      
+      <div class="article-image">
+        <img src="{% static 'media/aaqq/capa.png' %}" alt="Article Image">
+      </div>
+      
+      <div class="article-content">
+        <h4 style="text-align:center">
+          <em>Conheça os trabalhos selecionados em exposição digital da Rede Global de Museus da Água</em><br>
+        </h4>
+        <p style="text-align: justify">
+            O <strong>Museu das Águas Brasileiras da Universidade Federal do Tocantins (MAB/UFT)</strong> recebeu um total de <strong>32 inscrições de estudantes</strong> para a edição de 2024 do projeto <mark>"A Água que Queremos"</mark> - uma ação fomentada pela <strong>Rede Global de Museus da Água (Water Museums Global Network)</strong>, vinculada à Unesco. O projeto tem como objetivo inspirar um futuro mais sustentável a partir de criações de jovens sobre a temática "água" sob perspectivas naturais, culturais e sociais.
+        </p>
+        <p style="text-align: justify">
+            Foram <strong>cinco vídeos e 27 desenhos</strong> submetidos por alunos de <strong>18 instituições de ensino</strong>, sendo <strong>14 do estado do Tocantins</strong>, <strong>duas de São Paulo</strong> e <strong>duas de Minas Gerais</strong> (confira a lista abaixo). Destes, <mark>cinco trabalhos</mark> foram escolhidos para integrarem a exposição digital no site da <strong>Water Museums Global Network</strong>, que pode ser conferida <a href="https://thewaterwewant.watermuseums.net/contest/exhibition-year-2024/drawings/" target="_blank">aqui</a>. Os trabalhos destacados e os demais inscritos através do Museu das Águas Brasileiras da UFT encontram-se em exposição no site do próprio MAB. Você pode acessar clicando <a href="{% url 'webpage:galleryAAguaQueQueremos' %}" target="_blank">aqui.</a>
+        </p>
+        <h4>
+          Autores dos trabalhos selecionados pelo MAB/UFT:
+        </h4>
+        <ul>
+          <li><strong>Alice Sophie (9 anos)</strong> - <em>Water is the vein of the Earth</em> (Escola Tarquinio Cobra Olyntho)</li>
+          <li><strong>Lucas Fidelis (12 anos)</strong> - <em>The water is life</em> (Escola Est. Ana Macedo Maia)</li>
+          <li><strong>Sarah Oliveira Silva (14 anos)</strong> - <em>Water a precious liquid in our hands</em> (Escola Municipal Rosenda Zane Moraes)</li>
+          <li><strong>Paula Tamkakre (16 anos)</strong> - <em>Interconnection between the Apinajé Indigenous community and the Tocantins River</em> (Escola Indígena Tekator)</li>
+          <li><strong>Wesley Kelvy Andrade da Silva (17 anos)</strong> - <em>The fresh of fresh water</em> (Escola Estadual Girassol de Tempo Integral Meira Matos)</li>
+        </ul>
+        <h4>
+          Escolas participantes através do MAB/UFT:
+        </h4>
+        <ul>
+          <li>CEMIL Jardenir Jorge Frederico - Araguaina/TO</li>
+          <li>Colégio Estadual Prof. Silvandira Sousa Lima - Araguaina/TO</li>
+          <li>Colégio Estadual Manoel Vicente de Souza - Augustinopolis/TO</li>
+          <li>Colégio Dom Orione - Tocantinópolis/TO</li>
+          <li>Colégio Estadual David Barbosa Rolins - Marianópolis do Tocantins/TO</li>
+          <li>Colégio Estadual Odolfo Soares - Ponte Alta do Tocantins/TO</li>
+          <li>Colégio Estadual de Itacajá - Itacajá/TO</li>
+          <li>Colégio Militar do Estado do Tocantins - Palmas/TO</li>
+          <li>Escola Estadual Presidente Costa e Silva - Barrolândia/TO</li>
+          <li>Escola Tarquinio Cobra Olyntho - São José do Rio Pardo/SP</li>
+          <li>Colégio Estadual Serra das Cordilheiras - Colmeia/TO</li>
+          <li>Universidade Federal de São Carlos - UFSCar/SP</li>
+          <li>Escola Est. Ana Macedo Maia - Porto Nacional/TO</li>
+          <li>Escola Indígena Tekator - Área Indígena Apinagé Tocantinópolis/TO</li>
+          <li>Colégio Estadual Joaquim de Sena e Silva - Combinado/TO</li>
+          <li>Escola Municipal Rosenda Zane Moraes - Monte Claros/MG</li>
+          <li>Unidade de Ensino ECIM - São José Operário/MG</li>
+          <li>Escola Estadual Girassol de Tempo Integral Meira Matos - Aparecida do Rio Negro/TO</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %} 

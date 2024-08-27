@@ -1,0 +1,281 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+A Água que Queremos 2024
+{% endblock title %}
+{% block content %}
+
+
+<div class="general-title--1">
+  A Água que Queremos
+</div>
+
+
+
+<div class="background-gradient--1">
+  <div class="news-body">
+
+    <div style="text-align: center; padding-bottom: 50px; padding-top: 30px">
+      <img class="img-fluid" style="border-radius: 15px" src="{% static 'media/home/capa2.jpg' %}">
+    </div>
+    <h2 style="padding-bottom: 15px">
+      Concurso e Prêmio Internacional da Juventude "The Water We Want" (A Água que Queremos) - 5 ª Edição (2023-24).
+    </h2>
+    <div style="display:flex; justify-content:center; padding: 15px;">
+      <a  style="text-decoration: none" href="{% url 'webpage:galleryAAguaQueQueremos' %}">
+        <h5 class="news-btn">VEJA AQUI O RESULTADO DO EVENTO</h5>
+      </a><br>
+    </div>
+    <p>
+      O Concurso A Água que Queremos (<a href="https://thewaterwewant.watermuseums.net/" target="_blank" rel="noopener noreferrer" class="external">TWWW - The Water We Want</a> ) tem como objetivo explorar os nossos multifacetados legados da água - naturais e culturais, tangíveis e intangíveis - na perspectiva dos jovens para construir um futuro mais sustentável.
+    </p>
+    <p>
+      Com este concurso, que decorre de novembro de 2023 a maio de 2024, a Rede Global de Água Museus (WAMU-NET) deseja fortalecer a educação para a sustentabilidade da água e a esforços de sensibilização, envolvendo os jovens como contadores de histórias e narradores do nosso futuro “líquido”.
+    </p>
+    <p>
+      Como podemos inspirar novas percepções sobre a água e novas maneiras de respeitar mais a natureza? Que gestos revolucionários, mas de pequena escala, e soluções factíveis baseadas na natureza podem contribuir para a reavaliação do património hídrico e melhorar a sustentabilidade de todos os usos da água?
+    </p>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Chamada para Contribuições (Etapas e Prazos)
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <p>
+              Este concurso visa capacitar a excelência, fortalecer a visibilidade das atividades educativas implementados por museus da água e promovê-los em todo o mundo.
+            </p>
+
+            <p>
+              Alunos da escola e jovens os participantes são incentivados a desenvolver ideias inovadoras e envolventes ao propor usos responsáveis ​​e clarividentes da água.
+            </p>
+
+            <p>
+              Qualquer escola ou professor interessado em participar deverá:
+            </p>
+            <ul>
+                <li>Contatar o Museu das Águas Brasileiras <strong>(museudaagua@uft.edu.br)</strong>.
+            
+                <li>Envolver os alunos em atividades educacionais com foco em questões relacionadas à água (somente água doces) e ODS com a <strong>produção de desenhos originais, vídeos e outras mídias</strong>. 
+            
+                <li>Até <mark><strong>26 de abril de 2024</strong></mark>, enviar todas as inscrições (inscrições originais acompanhadas do formulários de inscrição) das escolas e alunos participantes.
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            Tema
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            Todas as obras de arte enviadas devem enfocar água doce (excluindo águas salgadas e oceanos) e questões relacionados à biodiversidade, mudanças climáticas e legados hídricos: naturais, culturais e tangíveis e patrimônios intangíveis.    
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            Participantes
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            O concurso destina-se a escolas, instituições de ensino (formais e informais) e sociedade civil organizações em todo o mundo e está limitado às seguintes faixas etárias:
+            <ul>
+              <li>estudantes de 6 a 9 anos
+              <li>estudantes de 10 a 12 anos
+              <li>estudantes de 13 a 18 anos
+              <li>estudantes de 19 a 25 anos (ensino superior)
+            </ul> 
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+            Categorias
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+          <div class="accordion-body">
+            <p>
+              Somente serão admitidas ao concurso inscrições dentro das seguintes categorias:
+            </p>
+            <p>
+              <strong>1. Desenhos (composições individuais ou de classe)</strong>
+            </p>
+            <p>
+              Aberta para idades de 6 a 9, 10 a 12 e 13 a 18 anos;
+            </p>
+            <p>
+              <strong>2. Vídeos e outras mídias</strong>
+            </p>
+            <p>
+              Composições individuais ou de classe; esta categoria inclui vídeos, fotos, pôsteres de página única, poemas, paisagens sonoras e músicas, incluindo a reinterpretação da música tradicional relacionada com a água.
+            </p>
+            <p>
+              Aberta para idades de 10 a 12, 13 a 18 e 19 a 25 anos.
+            </p>
+            <p>
+              Os concorrentes deverão escolher apenas um tipo de arte das categorias listadas acima.
+            </p>
+
+            <p>
+              Os participantes são incentivados a enviar trabalhos na maior resolução possível.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+            Inscrições
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+          <div class="accordion-body">
+            <p>
+              Até <mark><strong>26 de abril de 2024</strong></mark>, todas as inscrições e trabalhos deverão ser enviadas por e-mail para Museu das Águas Brasileiras (museudaagua@uft.edu.br), incluindo:
+            </p>
+            <p>
+              A. <a href="https://portal.uft.edu.br/museudaagua/premio-a-agua-que-queremos/" target="_blank">Formulário de Inscrição</a>
+            </p> 
+            <p>
+              B. Uma inscrição (apenas um tipo de trabalho entre as inscrições listadas acima).
+            </p>
+            <p>
+              O Formulário de Inscrição também inclui os Termos e Condições para participar do concurso.
+            </p>
+            <p>
+              Cada inscrição deve ser enviada com um título conciso e uma breve descrição (máximo 200 palavras).
+            </p>
+            <p>
+              É obrigatória a inclusão de legendas em inglês em todos os trabalhos submetidos (incluindo escritos e diálogos). Trabalhos sem tradução para o inglês não serão considerados.
+            </p>
+            <p>
+              Apenas um trabalho poderá ser submetido por uma única sala de aula ou aluno individual.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+            Exposição Digital Online TWWW 2024
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+          <div class="accordion-body">
+            Dentre todas as obras recebidas, o Museu das Águas Brasileiras selecionará até seis trabalhos inscritos, em faixas etárias e categorias. Os trabalhos selecionados serão incluídas na 5ª exposição digital online.    
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+            Prêmios
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+          <div class="accordion-body">
+            <p>
+              Todos os trabalhos selecionados pelos membros participantes da WAMU-NET têm direito a receber prêmios e menções especiais. Serão seis premiações (uma por faixa etária e categoria).
+            </p>
+            <p>
+              As seis melhores obras receberão um prémio monetário de 250€ e um Certificado de Prémio assinado pelo Presidente e pelo Diretor Executivo da Rede Global de Museus da Água.
+            </p>
+            <p>
+              Os vencedores finais serão anunciados em junho durante o webinar dedicado organizado com o representantes da UNESCO-IHP, educadores e museus de todo o mundo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+            Edições Anteriores
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
+          <div class="accordion-body">
+            Todas as obras selecionadas e vencedoras das edições anteriores do concurso TWWW estão disponíveis no <a href="https://thewaterwewant.watermuseums.net/">site oficial do concurso</a> e podem ser consideradas pelas escolas, alunos e professores participantes como uma fonte de inspiração para o desenvolvimento e criação dos seus próprios trabalhos.    
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+            Contatos
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
+          <div class="accordion-body">
+            Para mais informações, entre em contato com o Museu das Águas Brasileiras pelo e-mail museudaagua@uft.edu.br ou escreva para thewaterwewant@watermuseums.net.    
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+            A Rede Global de Museus da Água
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTen">
+          <div class="accordion-body">
+            <p>
+              A Rede Global de Museus da Água (WAMU-NET) é uma “iniciativa emblemática” do Programa Hidrológico Intergovernamental da Unesco que visa aumentar a consciência do nosso precioso patrimônio hídrico.
+            </p>
+
+            <p>
+              A Rede Global busca encontrar soluções para os problemas atuais da água desafios, conectando práticas de gestão de água passadas e presentes a práticas sustentáveis Objetivos de Desenvolvimento (ODS). A WAMU-NET promove os valores fundamentais de qualquer tipo de património hídrico herdado, tanto natural como cultural, tangível e intangível.
+            </p>
+            
+            <p>
+              Todos os membros da WAMU-NET estão empenhados em promover uma nova ética hídrica, reconectando a humanidade ao patrimônio da água, incluindo as suas dimensões sociais, culturais, artísticas e espirituais.
+            </p>
+            
+            <p>
+              Todos os membros comprometem-se a divulgar o concurso TWWW como parte integrante de suas atividades educativas por meio de boletins informativos e todo tipo de comunicação, a fim de fomentar participação e aumentar a conscientização sobre nossos legados hídricos herdados e nossos recursos mais preciosos fonte da vida.
+            </p>    
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingEleven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false" aria-controls="panelsStayOpen-collapseEleven">
+            <i class="fa-regular fa-folder" style="padding-right: 5px"></i> Arquivos
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEleven">
+          <div class="accordion-body">
+            <p>
+              <a href="https://docs.uft.edu.br/share/proxy/alfresco-noauth/api/internal/shared/node/PhoVmjTwTlGLdySJf84frQ/content"><strong><i class="fa-solid fa-file-pdf"></i></strong> A Água que Queremos_Concurso.pdf</a>
+            </p>
+            <p>
+              <a href="https://docs.uft.edu.br/share/proxy/alfresco-noauth/api/internal/shared/node/1Xdxas6UR4irl1pVJcWV_A/content"><strong><i class="fa-solid fa-file"></i></strong> Formulário de Inscrição - TWWW5.docx</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %} 
